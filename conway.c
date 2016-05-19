@@ -371,15 +371,16 @@ int main(argc, argv)
 int argc;
 char *argv[];
 {   
+    if(argc == 1){
+        printf("Falta archivo config. Para obtener ayuda ejecute 'conway -h'\n");
+        return 0;
+    }
 
     if(argv[1][0] == '-' && argv[1][1] == 'h'){
         ayuda();
         return 0;
     }
-    if(argc == 0){
-        printf("Falta archivo config. Para obtener ayuda ejecute 'conway -h'\n");
-        return 0;
-    }
+    
 
     PMYDATA Datos = (PMYDATA) malloc(sizeof(MYDATA));
 
