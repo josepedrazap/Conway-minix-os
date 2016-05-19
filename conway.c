@@ -378,7 +378,7 @@ char *argv[];
         return 0;
     }
     if(argc == 1){
-        printf("Falta archivo config. Para obtener ayuda ejecute "conway -h"\n");
+        printf("Falta archivo config. Para obtener ayuda ejecute 'conway -h'\n");
         return 0;
     }
 
