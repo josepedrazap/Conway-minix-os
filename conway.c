@@ -8,7 +8,7 @@
 
 #define red   "\033[0;1m"        /* 0 -> normal ;  31 -> red */
 #define cyan  "\033[1;36m"        /* 1 -> bold ;  36 -> cyan */
-#define green "\033[9;228m"        /* 4 -> underline ;  32 -> green */
+#define green "\033[9;32m"        /* 4 -> underline ;  32 -> green */
 #define blue  "\033[9;34m"        /* 9 -> strike ;  34 -> blue */
  
 #define black  "\033[0;30m"
