@@ -8,7 +8,7 @@
 
 
 #define green "\033[9;30m"        /* 4 -> underline ;  32 -> green */
-
+#define red "\033[9;28m" 
 #define none   "\033[0m"        /* to flush the previous property */
 
 
