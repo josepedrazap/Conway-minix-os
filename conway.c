@@ -315,10 +315,10 @@ void Imprimir_tablero(PMYDATA s, int o){
 
             if(s->tablero_anterior[i][j] == 1){
 
-                //SetConsoleTextAttribute(GetStdHandle (STD_OUTPUT_HANDLE),9);
+                
                 printf("   #");
                 c++;
-                //SetConsoleTextAttribute(GetStdHandle (STD_OUTPUT_HANDLE),7);
+                
                 continue;
             }
 
@@ -330,8 +330,6 @@ void Imprimir_tablero(PMYDATA s, int o){
     printf("\n");
     rondas = rondas + 1;
     printf("Vivos: %i. Ronda: %i.\n", c, rondas); 
-     
-    sleep(1); 
     s->z = 0;
  }
 }
