@@ -331,6 +331,7 @@ void Imprimir_tablero(PMYDATA s, int o){
     printf("\n");
     rondas = rondas + 1;
     printf("Vivos: %i. Ronda: %i.\n", c, rondas); 
+     printf ("\033[32m Salida en color: Verde\n");
     s->z = 0;
  }
 }
