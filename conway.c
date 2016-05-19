@@ -307,7 +307,7 @@ void Imprimir_tablero(PMYDATA s, int o){
     c = 0;                        
     system("clear"); 
 
-    printf("%i hilos en regiones de %ix%i. \n", s->h, s->m, s->n);
+    printf("%i %shilos en regiones de %ix%i.%s \n", green, s->h, s->m, s->n, green);
 
     for(i = 0; i < s->N; i++)printf("----");
 
