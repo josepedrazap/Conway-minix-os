@@ -277,6 +277,7 @@ void func_salir(PMYDATA s){
 
             mthread_barrier_destroy(&(s->barrera));
             mthread_mutex_destroy(&(s->ghMutex2));
+            printf("\n");
 
             exit(1);
 
@@ -375,7 +376,7 @@ char *argv[];
         ayuda();
         return 0;
     }
-    if(argc == 1){
+    if(argv == 1){
         printf("Falta archivo config. Para obtener ayuda ejecute 'conway -h'\n");
         return 0;
     }
