@@ -6,7 +6,7 @@
 #include <sys/time.h>
 #include <sys/types.h>
 
-#define red   "\033[0;31m"        /* 0 -> normal ;  31 -> red */
+#define red   "\033[0;0m"        /* 0 -> normal ;  31 -> red */
 #define cyan  "\033[1;36m"        /* 1 -> bold ;  36 -> cyan */
 #define green "\033[9;32m"        /* 4 -> underline ;  32 -> green */
 #define blue  "\033[9;34m"        /* 9 -> strike ;  34 -> blue */
@@ -335,7 +335,7 @@ void Imprimir_tablero(PMYDATA s, int o){
                 continue;
             }
 
-            printf("   .");
+            printf("   %s.%s", red, red);
         }printf("\n \n");
     }
     for(i = 0; i < s->N; i++)printf("----");
