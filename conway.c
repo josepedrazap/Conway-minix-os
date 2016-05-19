@@ -329,7 +329,7 @@ void Imprimir_tablero(PMYDATA s, int o){
             if(s->tablero_anterior[i][j] == 1){
 
                 
-                printf("   %s#%s", red, none);
+                printf("   %s#%s", green, none);
                 c++;
                 
                 continue;
@@ -342,7 +342,7 @@ void Imprimir_tablero(PMYDATA s, int o){
 
     printf("\n");
     rondas = rondas + 1;
-    printf("%sVivos: %i. Ronda: %i.%s\n", blue,c, rondas, none); 
+    printf("%sVivos: %i. Ronda: %i.%s\n", green, c, rondas, none); 
     s->z = 0;
  }
 }
