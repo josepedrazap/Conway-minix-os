@@ -275,8 +275,8 @@ void func_salir(PMYDATA s){
             free(s->tablero_anterior);
             free(s->ini);
 
-            mthread_barrier_destroy(&(b->barrera));
-            mthread_mutex_destroy(&(b->ghMutex2));
+            mthread_barrier_destroy(&(s->barrera));
+            mthread_mutex_destroy(&(s->ghMutex2));
 
             exit(1);
 
@@ -284,6 +284,7 @@ void func_salir(PMYDATA s){
 
     tcsetattr( STDIN_FILENO, TCSANOW, &oldt);
     return;
+    }
 }
 
 
