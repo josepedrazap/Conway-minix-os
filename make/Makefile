@@ -1,9 +1,8 @@
 
 
 install: 
-	
-	cp /usr/games/conway /usr/bin/
-	ln -s /usr/bin/conway ./conway
+
+	ln -s /usr/games /home/conway
 
 
 
