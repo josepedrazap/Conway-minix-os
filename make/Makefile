@@ -12,8 +12,8 @@ install:
 
 	cp $(OBJ) $(DIR)
 
-	ln -s $(DIR)/(OBJ) $(USR)
+	ln -s $(DIR)/$(OBJ) $(USR)
 
-	rm (OBJ)
+	rm $(OBJ)
 
 
